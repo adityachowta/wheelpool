@@ -1,0 +1,206 @@
+/* CSS Document */
+*{
+padding:0;
+margin:0;
+font-family:Roboto;
+}
+body{background-color:#EBEFF2	;}
+.clear{ clear:both;}
+
+/*css for home.php*/
+.wrapper{
+width:1170px;
+padding: 52px 97px;
+margin:0 auto;}
+
+.tittle{
+width:368px;
+height:130px;
+background-color:#F05A49;
+padding:1px;
+float:left;	
+}
+.tittle p{
+width:292px;
+font-size:50px;
+color:#FFF;
+margin: 34px auto;
+}
+.nav-holder{}
+.nav-1, .nav-2, .nav-3, .nav-4, .nav-5, .nav-4-1, .nav-5-1{
+float:left;
+width:140px;
+height:132px;
+margin-left:20px;	
+}
+.nav-1
+{
+background:url(../images/home.fw.png);	
+}
+.nav-2
+{ background:url(../images/about.fw.png);}
+.nav-3
+{ background:url(../images/explore.fw.png);}
+.nav-4
+{ background:url(../images/register.fw.png);}
+.nav-5
+{ background:url(../images/login.fw.png);}
+.nav-4-1
+{background:url(../images/req-ride.fw.png);}
+.nav-5-1
+{background:url(../images/save-ride.fw.png);}
+.mid{
+margin:20px auto;
+}	
+.query-box{
+background-color:#FFF;
+width:500px;
+height:250px;
+}
+.query-table{
+padding:25px;	
+}
+.query-table td{
+width:250px;}
+.query-table p{
+color:#F86924;
+font-size:20px;
+font-weight:normal;
+display:inline;
+}
+.left-cover-1, .left-cover-2, .query-box, .recent-list, .right-cover-1, .right-cover-2, .recent-list-holder, .query-holder{ float:left;}
+.left-cover-1{
+background:url(../images/left-cover-1.fw.png) no-repeat;
+width:22px;
+height:250px;
+}
+.right-cover-1{
+background:url(../images/right-cover-1.fw.png) no-repeat;
+width:10px;
+height:250px;
+}
+.left-cover-2{
+background:url(../images/left-cover-2.fw.png) no-repeat;
+width:22px;
+height:250px;
+}
+.right-cover-2{
+background:url(../images/right-cover-2.fw.png) no-repeat;
+width:10px;
+height:250px;
+}
+.left-cover-3{
+background:url(../images/left-cover-3.fw.png) no-repeat;
+width:22px;
+height:250px;
+}
+.right-cover-3{
+background: url(../images/right-cover-3.fw.png) no-repeat;
+width:10px;
+height:250px;
+}
+.recent-list{
+background:#FFF;
+width:342px;
+height:200px;
+padding:25px;
+}
+.recent-list p{
+color:#FF9F00;
+font-size:20px;
+font-weight:normal;
+display:inline;
+}
+
+/*css for login.php*/
+.login-box-holder{
+width:1170px;
+height:400px;
+background:#00A9AA;
+padding:1px;
+}
+.login-box{
+width:273px;
+height:265px;
+margin:66px auto 66px;
+}
+.login-icon{
+background:url(../images/login-icon.fw.png) no-repeat;
+width:107px;
+height:50px;
+margin:0 auto 25px;	
+}
+.login-box form{
+margin:auto;
+}
+.login-txt{
+width:272px;
+height:42px;
+background:#EBEFF2;
+color:#9E9E9E;
+font-size:13px;
+border:0px solid;
+margin:5px 0;
+text-indent:5px;
+}
+.login-btn{
+width:272px;
+height:42px;
+background:#00A9AA;
+border:1px #006A6A solid;
+margin-top:15px;
+color:#FFF;
+}
+
+/*css for registration.php*/
+
+.register-box-holder{
+width:1170px;
+height:631px;
+background:#F05A49;
+padding:1px;
+}
+.register-box{
+width:381px;
+height:501px;
+margin:96px auto;
+}
+.register-icon{
+background:url(../images/register-icon.fw.png) no-repeat;
+width:175px;
+height:63px;
+margin:auto;
+}
+.line{
+width:381px;
+height:1px;
+background:#F48679;
+margin:10px auto;
+}
+.register-form-holder{
+font-size:10px;
+color:#FFF;
+}
+.regTxt{
+width:380px;
+height:42px;
+background:#EBEFF2;
+color:#9E9E9E;
+font-size:13px;
+border:0px solid;
+margin:5px 0;
+text-indent:5px;
+}
+.reg-btn{
+width:380px;
+height:42px;
+background:#F37B6D;
+border:1px #B5200F solid;
+margin-top:15px;
+color:#FFF;
+}
+.details-holder{
+color: #00A3E2;
+font-size:24px;
+
+}

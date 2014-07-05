@@ -1,0 +1,14 @@
+@(title: String)
+
+@form(title) {
+<div class="login-box-holder"><!--login-box-holder starts here-->
+    <div class="login-box">
+        <div class="login-icon"></div>
+        <form  name="login" id="login" method="post" action="login.php">
+            <input class="login-txt blur-txt" name="userName" type="text" placeholder="Enter Username" />
+            <input class="login-txt blur-txt" name="password" type="text" placeholder="Enter Password" />
+            <input class="login-btn" name="submit" type="submit" value="LOGIN" />
+        </form>
+    </div>
+</div>
+}
