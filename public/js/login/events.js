@@ -32,7 +32,7 @@ $(document).ready(function() {
                     if(data.error) {
                         $(e.currentTarget).find("p.error").html(data.error.description);
                     } else {
-                        window.location = '/';
+                        window.location = '/home';
                     }
             });
         }

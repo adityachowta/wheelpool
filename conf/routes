@@ -2,16 +2,17 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Home page
-GET     /                           controllers.Application.index()
-
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
 # AUTHENTICATION
 GET     /login      controllers.AuthenticationController.login()
 POST    /login      controllers.AuthenticationController.handleLogin()
+GET     /logout     controllers.AuthenticationController.logout()
 
 # REGISTRATION
 GET     /signup     controllers.SignupController.signup()
 POST    /signup     controllers.SignupController.handleSignup()
+
+# USER HOME
+GET     /           controllers.home.HomeController.home()

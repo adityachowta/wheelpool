@@ -50,4 +50,9 @@ public class AuthenticationController extends Controller {
         }
         return ok(Json.toJson(new Message(200, "Login successful!", Message.MessageType.SUCCESSFUL)));
     }
+
+    public static Result logout() {
+        session().clear();
+        return redirect(routes.AuthenticationController.login());
+    }
 }

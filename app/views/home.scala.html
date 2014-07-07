@@ -1,0 +1,58 @@
+@(title: String, u: models.user.User)
+
+@main(title) {
+    <div class="mid"><!--mid starts here-->
+        <div class="banner"></div>
+        <div class="mid-content-holder"><!--mid-content-holder starts here-->
+            <div class='details-holder'>
+                <div>
+                    <p>Welcome @u.getFullName()</p>
+                </div>
+            </div>
+        <div class="query-holder"><!--query-holder starts here-->
+            <div class="left-cover-1"></div>
+            <div class="query-box"><!--query-box starts here-->
+                <form name="query" method="post" action="result.php">
+                    <table width="500" class="query-table">
+                        <tr>
+                            <td><p>I'm a</p></td>
+                            <td><input name="driv" type="radio" value="Driver" /> <p>Driver</p> <input name="pass" type="radio" value="Passenger" /> <p>Passenger</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>starting from</p></td>
+                            <td><input name="strt" type="text" size="25" class="textbox blur-txt" value="your origin" title="your origin" /></td>
+                        </tr>
+                        <tr>
+                            <td><p>goin to</p></td>
+                            <td><input name="dest" type="text" size="25" class="textbox blur-txt" value="your destination" title="your destination"/></td>
+                        </tr>
+                        <tr>
+                            <td><p>leaving on</p></td>
+                            <td><input name="date" type="text" size="25" class="textbox blur-txt" value="mm/dd/yy - optional" title="mm/dd/yy - optional"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align:center;"><input name="submit" type="submit" value="Query" /></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div><!--query-box ends here-->
+            <div class="right-cover-1"></div>
+
+            <div class="clear"></div>
+        </div><!--query-holder ends here-->
+
+        <div class="recent-list-holder"><!--recent-list-holder starts here-->
+            <div class="left-cover-2"></div>
+            <div class="recent-list"><!--recent-list starts here-->
+                <p>Recently posted rides</p>
+            </div><!--recent-list ends here-->
+            <div class="right-cover-2"></div>
+
+            <div class="clear"></div>
+        </div><!--recent-list-holder ends here-->
+
+        <div class="news"></div>
+    </div><!--mid-content-holder ends here-->
+    </div><!--mid ends here-->
+}
