@@ -10,3 +10,6 @@ GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
 # AUTHENTICATION
 GET     /login      controllers.AuthenticationController.login()
+POST    /login      controllers.AuthenticationController.handleLogin()
+GET     /signup     controllers.AuthenticationController.signup()
+POST    /signup     controllers.AuthenticationController.handleSignup()

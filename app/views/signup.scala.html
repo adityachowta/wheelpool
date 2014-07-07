@@ -1,0 +1,24 @@
+@(title: String)
+
+@form(title) {
+<div class="register-box-holder"><!--register-box-holder starts here-->
+    <div class="register-box"><!--register-box starts here-->
+        <div class="register-icon"></div>
+        <div class="line"></div>
+        <div class="register-form-holder">
+            <form action="?register=true" method="post" name="register" id="register">
+                <p>LOGIN INFORMATION</p>
+                <input class="regTxt blur-txt" name="uname" type="text" value="Username" title="Username"/>
+                <input class="regTxt blur-txt" name="pwd" type="text" value="Password" title="Password" />
+                <p>USER INFORMATION</p>
+                <input class="regTxt blur-txt" name="fname" type="text" value="First Name" title="First Name"/>
+                <input class="regTxt blur-txt" name="lname" type="text" value="Last Name"  title="Last Name"/>
+                <input class="regTxt blur-txt" name="email" type="text" value="Email" title="Email"/>
+                <p>GENDER</p>
+                <input name="gender" type="radio" value="male" />Male  <input name="gender" type="radio" value="female" />Female
+                <input class="reg-btn" name="register" type="submit" value="Register" />
+            </form>
+        </div>
+    </div><!--register-box ends here-->
+</div><!--register-box-holder ends here-->
+}
