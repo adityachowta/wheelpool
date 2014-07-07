@@ -1,6 +1,7 @@
 package models.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import models.Status;
 import org.joda.time.DateTime;
 import play.data.format.Formats;
 import play.data.validation.Constraints;
@@ -24,8 +25,8 @@ public class User extends Model {
 
     public String fullName;
 
-    //@Constraints.Required
-    //public Status status = Status.ACTIVE;
+    @Constraints.Required
+    public Status status = Status.ACTIVE;
 
     public String email;
 
@@ -35,12 +36,6 @@ public class User extends Model {
     @Constraints.Required
     public String phone;
 
-    @OneToOne
-    public User createdBy;
-
-    @OneToOne
-    public User modifiedBy;
-
     //public UserType userType;
 
     @Formats.DateTime(pattern = "MM/dd/yy")
@@ -49,13 +44,11 @@ public class User extends Model {
     public User() {
     }
 
-    public User(String fullName, String email, String password, String phone, User createdBy, User modifiedBy) {
+    public User(String fullName, String email, String password, String phone) {
         this.fullName = fullName;
         this.email = email;
         this.password = password;
         this.phone = phone;
-        this.createdBy = createdBy;
-        this.modifiedBy = modifiedBy;
     }
 
     public Long getId() {
@@ -96,22 +89,6 @@ public class User extends Model {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    public User getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(User createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public User getModifiedBy() {
-        return modifiedBy;
-    }
-
-    public void setModifiedBy(User modifiedBy) {
-        this.modifiedBy = modifiedBy;
     }
 
     public Timestamp getCreated() {

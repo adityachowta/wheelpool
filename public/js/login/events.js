@@ -25,10 +25,8 @@ $(document).ready(function() {
 
     // form submit function
     $("form").on("submit", function(e) {
-        console.log("INSIDE");
         e.preventDefault();
             if($(e.currentTarget).valid()) {
-                console.log("INSIDE 2");
                 $.post(e.currentTarget.action, $(e.currentTarget).serialize())
                 .success(function(data) {
                     if(data.error) {

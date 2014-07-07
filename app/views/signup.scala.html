@@ -6,16 +6,17 @@
         <div class="register-icon"></div>
         <div class="line"></div>
         <div class="register-form-holder">
-            <form action="?register=true" method="post" name="register" id="register">
+            <form method="post" name="register" id="register" action="@controllers.routes.SignupController.handleSignup()" data-uri="">
                 <p>LOGIN INFORMATION</p>
-                <input class="regTxt blur-txt" name="uname" type="text" value="Username" title="Username"/>
-                <input class="regTxt blur-txt" name="pwd" type="text" value="Password" title="Password" />
+                <input class="regTxt blur-txt email" name="email" type="text" placeholder="email" title="Email"/>
+                <input class="regTxt blur-txt password" name="password" type="password" placeholder="password" title="Password" />
+                <input class="regTxt blur-txt" name="confirmPassword" type="password" placeholder="confirm password" title="Confirm Password" />
                 <p>USER INFORMATION</p>
-                <input class="regTxt blur-txt" name="fname" type="text" value="First Name" title="First Name"/>
-                <input class="regTxt blur-txt" name="lname" type="text" value="Last Name"  title="Last Name"/>
-                <input class="regTxt blur-txt" name="email" type="text" value="Email" title="Email"/>
+                <input class="regTxt blur-txt" name="fullName" type="text" placeholder="full name" title="First Name"/>
+                <input class="regTxt blur-txt" name="phone" type="text" placeholder="phone" title="Phone"/>
                 <p>GENDER</p>
-                <input name="gender" type="radio" value="male" />Male  <input name="gender" type="radio" value="female" />Female
+                <input name="gender" type="radio" value="MALE"/>Male
+                <input name="gender" type="radio" value="FEMALE" />Female
                 <input class="reg-btn" name="register" type="submit" value="Register" />
             </form>
         </div>

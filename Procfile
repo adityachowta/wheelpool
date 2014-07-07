@@ -1,0 +1,1 @@
+web: target/universal/stage/bin/wheelpool -Dhttp.port=$PORT -Dconfig.resource=app.prod.conf
