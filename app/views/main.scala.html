@@ -1,4 +1,4 @@
-@(title: String)(content: Html)
+@(title: String, u: models.user.User)(content: Html)
 @import tags._
 
 <html>
@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="wrapper">
-            @_header()
+            @_header(u)
             @content
             @_footer()
         </div>

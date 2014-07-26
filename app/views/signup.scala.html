@@ -1,12 +1,20 @@
-@(title: String)
+@(title: String, u: models.user.User)
 
-@form(title) {
+@form(title, u) {
 <div class="register-box-holder"><!--register-box-holder starts here-->
     <div class="register-box"><!--register-box starts here-->
         <div class="register-icon"></div>
         <div class="line"></div>
         <div class="register-form-holder">
             <form method="post" name="register" id="register" action="@controllers.routes.SignupController.handleSignup()" data-uri="">
+                <div id="error-box" class="box error">
+                    <div class="title">
+                        <h4>Error Occurred!</h4>
+                    </div>
+                    <div class="content">
+                        <p></p>
+                    </div>
+                </div>
                 <p>LOGIN INFORMATION</p>
                 <input class="regTxt blur-txt email" name="email" type="text" placeholder="email" title="Email"/>
                 <input class="regTxt blur-txt password" name="password" type="password" placeholder="password" title="Password" />

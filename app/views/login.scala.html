@@ -1,4 +1,4 @@
-@(title: String)
+@(title: String, u: models.user.User)
 @import tags._
 
 <html>
@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="wrapper">
-    @_header()
+    @_header(u)
     <div class="login-box-holder"><!--login-box-holder starts here-->
         <div class="login-box">
             <div class="login-icon"></div>

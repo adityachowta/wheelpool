@@ -16,3 +16,6 @@ POST    /signup     controllers.SignupController.handleSignup()
 
 # USER HOME
 GET     /           controllers.home.HomeController.home()
+
+#RIDE
+GET     /ride/post  controllers.ride.RideController.postRide()

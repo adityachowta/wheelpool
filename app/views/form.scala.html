@@ -1,4 +1,4 @@
-@(title: String)(content: Html)
+@(title: String, u: models.user.User)(content: Html)
 
 @import tags._
 
@@ -16,7 +16,7 @@
 
     <body>
         <div class="wrapper">
-            @_header()
+            @_header(u)
             @content
         </div>
         <script type="text/javascript" src='@routes.Assets.at("js/forms.js")'></script>

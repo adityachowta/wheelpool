@@ -24,14 +24,18 @@ import java.util.Map;
 public class AuthenticationController extends Controller {
 
     public static Result login() {
-        return ok(views.html.login.render("Login"));
+        return ok(views.html.login.render("Login", null));
     }
 
     public static Result handleLogin() {
         ObjectMapper mapper = new ObjectMapper();
+
+
         Map<String, String[]> m = request().body().asFormUrlEncoded();
         if (m == null)
             return badRequest(Json.toJson(new Message(400, "Oops! Invalid login!", Message.MessageType.BAD_REQUEST)));
+
+        //To access form data
         String email = StringUtils.isEmpty(m.get("email")[0]) ? StringUtils.EMPTY : m.get("email")[0];
         String password = StringUtils.isEmpty(m.get("password")[0]) ? StringUtils.EMPTY : m.get("password")[0];
         User user = Ebean.find(User.class).where(

@@ -16,7 +16,7 @@ import play.mvc.Result;
 public class SignupController extends Controller {
 
     public static Result signup() {
-        return ok(views.html.signup.render("Sign Up"));
+        return ok(views.html.signup.render("Sign Up", null));
     }
 
     @BodyParser.Of(BodyParser.Json.class)
